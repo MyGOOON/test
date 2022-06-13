@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "handleLogin",
+    "pageId": "登录",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\treqLogin: async () => {\n\t\tlogin.run((res) => {\n\t\t\tconsole.log('11111->',res)\n\t\t\tif (res.length === 0) {\n\t\t\t\tshowAlert('电话号码未注册，登录失败！')\n\t\t\t} else {\n\t\t\t\tconst userInfo = res[0]\n\t\t\t\tstoreValue('userInfo', userInfo)\n\t\t\t\tnavigateTo('我的审批')\n\t\t\t}\n\t\t})\n\t}\n}",
+    "variables": []
+  },
+  "id": "登录_handleLogin",
+  "deleted": false,
+  "gitSyncId": "62a730b104323632a5f886f6_62a730b104323632a5f8875c"
+}

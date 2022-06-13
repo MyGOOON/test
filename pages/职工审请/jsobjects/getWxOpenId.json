@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "getWxOpenId",
+    "pageId": "职工审请",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetWxCode: async () => {\n\t\tconst redirectUrl = 'http://form.17usoft.com/app/application/page-62a15d7304323632a5f8850c'\n\t\tconst wxCodeUrl = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxdfcee045f6e95879&redirect_uri=${encodeURIComponent(redirectUrl)}&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect`\n\t\t if (!appsmith.URL.queryParams.code) {\n\t\t\t navigateTo(wxCodeUrl)\n\t\t }\n\t}\n}",
+    "variables": []
+  },
+  "id": "职工审请_getWxOpenId",
+  "deleted": false,
+  "gitSyncId": "62a730b104323632a5f886f6_62a730b104323632a5f88733"
+}

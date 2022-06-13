@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "registAndLogin",
+    "pageId": "登录",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tregist() {\n\t\n\t}\n}",
+    "variables": []
+  },
+  "id": "登录_registAndLogin",
+  "deleted": false,
+  "gitSyncId": "62a730b104323632a5f886f6_62a730b104323632a5f8875e"
+}

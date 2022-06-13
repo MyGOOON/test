@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "registAndLogin",
+    "pageId": "注册",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tregist() {\n\t\t// 先调用登录接口查看是否已注册\n\t\tlogin.run(res => {\n\t\t\t// 未注册\n\t\t\tif (res.length === 0) {\n\t\t\t\tregister.run(res => {\n\t\t\t\t\tconsole.log(\"注册成功--->\", res)\n\t\t\t\t\t// 跳转登录\n\t\t\t\t\tnavigateTo('登录')\n\t\t\t\t})\n\t\t\t} else {\n\t\t\t\tshowAlert('该手机号已注册！')\n\t\t\t}\n\t\t})\n\t}\n}",
+    "variables": []
+  },
+  "id": "注册_registAndLogin",
+  "deleted": false,
+  "gitSyncId": "62a730b104323632a5f886f6_62a730b104323632a5f88754"
+}

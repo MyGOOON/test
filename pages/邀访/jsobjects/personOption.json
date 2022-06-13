@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "personOption",
+    "pageId": "邀访",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tlist: [],\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "list",
+        "value": []
+      }
+    ]
+  },
+  "id": "邀访_personOption",
+  "deleted": false,
+  "gitSyncId": "62a730b104323632a5f886f6_62a730b104323632a5f8875a"
+}
